@@ -99,8 +99,8 @@ cd .github/actions/javascript-action
 npm install
 
 # 設定環境變數
-export INPUT_WHO-TO-GREET="本地測試"
-export INPUT_MESSAGE-PREFIX="你好"
+export INPUT_WHO_TO_GREET="本地測試"
+export INPUT_MESSAGE_PREFIX="你好"
 
 # 執行
 node index.js
@@ -116,7 +116,7 @@ docker build -t test-container-action .
 
 # 執行測試
 docker run --rm \
-  -e INPUT_TEXT-TO-PROCESS="測試文字" \
+  -e INPUT_TEXT_TO_PROCESS="測試文字" \
   -e INPUT_OPERATION="uppercase" \
   -e INPUT_OUTPUT-FORMAT="text" \
   -e GITHUB_OUTPUT=/tmp/output.txt \

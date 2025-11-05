@@ -220,8 +220,8 @@ COPY ./app /app
 ```bash
 #!/bin/bash
 
-# action.yml 中的 text_to_process 變成 INPUT_TEXT-TO-PROCESS
-TEXT="${INPUT_TEXT-TO-PROCESS}"
+# action.yml 中的 text_to_process 變成 INPUT_TEXT_TO_PROCESS
+TEXT="${INPUT_TEXT_TO_PROCESS}"
 OPERATION="${INPUT_OPERATION}"
 
 echo "文字: ${TEXT}"
@@ -280,7 +280,7 @@ docker build -t my-action .
 
 # 執行測試
 docker run --rm \
-  -e INPUT_TEXT-TO-PROCESS="test text" \
+  -e INPUT_TEXT_TO_PROCESS="test text" \
   -e INPUT_OPERATION="uppercase" \
   my-action
 ```
@@ -289,7 +289,7 @@ docker run --rm \
 
 ```bash
 # 設定環境變數
-export INPUT_TEXT-TO-PROCESS="test"
+export INPUT_TEXT_TO_PROCESS="test"
 export INPUT_OPERATION="uppercase"
 export GITHUB_OUTPUT="/tmp/output.txt"
 export GITHUB_ENV="/tmp/env.txt"
@@ -384,7 +384,7 @@ import sys
 
 def main():
     # 讀取輸入
-    text = os.environ.get('INPUT_TEXT-TO-PROCESS', '')
+    text = os.environ.get('INPUT_TEXT_TO_PROCESS', '')
     operation = os.environ.get('INPUT_OPERATION', 'uppercase')
     
     # 處理
@@ -471,7 +471,7 @@ uname -a
 # 啟動容器並進入 shell
 docker run -it --rm \
   -v $(pwd):/github/workspace \
-  -e INPUT_TEXT-TO-PROCESS="test" \
+  -e INPUT_TEXT_TO_PROCESS="test" \
   my-action /bin/sh
 
 # 在容器內測試

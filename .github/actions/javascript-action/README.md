@@ -201,8 +201,8 @@ const { data } = await octokit.rest.repos.get({
 
 ```bash
 # 設定輸入參數
-export INPUT_WHO-TO-GREET="Local Test"
-export INPUT_MESSAGE-PREFIX="Hello"
+export INPUT_WHO_TO_GREET="Local Test"
+export INPUT_MESSAGE_PREFIX="Hello"
 
 # 執行
 node index.js

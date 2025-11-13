@@ -524,8 +524,8 @@ Web Forms:   ████ (低)
 
 ### 版本選擇建議
 
-**2024 年開始新專案**
-- ✅ 優先選擇：**.NET 8 (LTS) 或更新版本**
+**新專案技術選型建議**
+- ✅ 優先選擇：**.NET 8 (LTS)**（長期支援版本，建議用於企業/穩定性需求）或 **.NET 9 (STS)**（最新標準支援版本，適合追求新功能者）
 - ✅ 框架選擇：
   - **ASP.NET Core MVC**（複雜應用）
   - **ASP.NET Core Web API**（API 服務）
@@ -635,7 +635,7 @@ Web API:     $      (最低)
 
 ### 最終建議
 
-**2024 年及以後的技術選擇**
+**2025 年及以後的技術選擇**
 1. **首選**：ASP.NET Core Web API + 現代前端框架（React/Vue/Angular）
 2. **次選**：ASP.NET Core MVC（需要伺服器渲染時）
 3. **特定場景**：Razor Pages（簡單應用）
@@ -659,7 +659,7 @@ Web API:     $      (最低)
 - [Razor Pages 官方文件](https://docs.microsoft.com/aspnet/core/razor-pages/)
 
 ### 遷移指南
-- [從 ASP.NET Web Forms 遷移](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/)
+- [從 ASP.NET Web Forms 遷移](https://learn.microsoft.com/aspnet/core/migration/webforms/)
 - [從 ASP.NET MVC 遷移至 ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/mvc)
 - [從 .NET Framework 遷移至 .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
 
@@ -670,6 +670,6 @@ Web API:     $      (最低)
 ---
 
 **文件版本**：1.0  
-**最後更新**：2024 年 11 月  
+**最後更新**：2025 年 11 月  
 **維護者**：技術團隊  
 **適用對象**：架構師、技術主管、開發團隊
